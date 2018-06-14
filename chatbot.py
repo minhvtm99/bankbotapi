@@ -486,11 +486,24 @@ def trigram_viterbi(hmm, sentence):
 	return zip(X, Z)
 
 
-#Test
-training_data = read_pos_file("chatbot.txt")
-words_tagged = training_data[0]
-words = training_data[1]
-tags = training_data[2]
+def tag_experiment(filename, msg, order):
+	"""
+	Train the model on filename and test on msg
+	"""
+	training_data = training_data = read_pos_file(filename)
+	words_tagged = training_data[0]
+	words = training_data[1]
+	tags = training_data[2]
 
-hmm2 = build_hmm(words_tagged, tags, words, 2, True)
-hmm3 = build_hmm(words_tagged, tags, words, 3, True)
+	hmm = build_hmm(words_tagged, tags, words, order, True)
+	update_hmm(hmm, msg.split(), 0.0001)
+
+	if order == 2:
+		result = bigram_viterbi(hmm, msg.split())
+	else:
+		result = trigram_viterbi(hmm, msg.split())
+
+	return result
+
+
+print tag_experiment('chatbot.txt', 'Bot tim cho toi ATM gan Nguyen Huy Tuong', 2)
