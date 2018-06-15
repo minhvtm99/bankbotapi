@@ -4,18 +4,11 @@ import random
 import numpy
 from collections import *
 
-import matplotlib.pyplot as plt
-import pylab
-import types
-import time
-import copy
-
 class HMM:
 	"""
 	Simple class to represent a Hidden Markov Model.
 	"""
 	def __init__(self, order, initial_distribution, emission_matrix, transition_matrix):
-                self.order = order
 		self.initial_distribution = initial_distribution
 		self.emission_matrix = emission_matrix
 		self.transition_matrix = transition_matrix
@@ -43,7 +36,7 @@ def read_pos_file(filename):
 		file_representation.append( (word, tag) )
 		unique_words.add(word)
 		unique_tags.add(tag)
-  	f.close()
+	f.close()
 	return file_representation, unique_words, unique_tags
 
 #####################  STUDENT CODE BELOW THIS LINE  #####################
@@ -368,7 +361,6 @@ def bigram_viterbi(hmm, sentence):
 	- A list of tuple (word, tag)
 	"""
 	#get the properties of the hmm
-	order = hmm.order
 	pi = hmm.initial_distribution
 	E = hmm.emission_matrix
 	A = hmm.transition_matrix
@@ -393,7 +385,12 @@ def bigram_viterbi(hmm, sentence):
 	for i in range(len(X)-2, -1, -1):
 		Z[i] = bp[Z[i+1]][i+1]
 	
-	return zip(X, Z)
+	#Zip X and Z
+	result = []
+	for i in range(len(X)):
+		result.append((X[i],Z[i]))
+
+	return result
 
 def update_hmm(hmm, test_data, epsilon):
 	"""
@@ -448,7 +445,6 @@ def trigram_viterbi(hmm, sentence):
 	- A list of tuple (word, tag)
 	"""
 	#get the properties of the hmm
-	order = hmm.order
 	pi = hmm.initial_distribution
 	E = hmm.emission_matrix
 	A = hmm.transition_matrix
@@ -483,14 +479,19 @@ def trigram_viterbi(hmm, sentence):
 	for i in range(len(X)-3, -1, -1):
 		Z[i] = bp[Z[i+1]][Z[i+2]][i+2]
 	
-	return zip(X, Z)
+	#Zip X and Z:
+	result = []
+	for i in range(len(X)):
+		result.append((X[i],Z[i]))
+
+	return result
 
 
-def tag_experiment(filename, msg, order):
+def tag_experiment(msg, order):
 	"""
 	Train the model on filename and test on msg
 	"""
-	training_data = training_data = read_pos_file(filename)
+	training_data = read_pos_file('chatbot.txt')
 	words_tagged = training_data[0]
 	words = training_data[1]
 	tags = training_data[2]
@@ -506,4 +507,4 @@ def tag_experiment(filename, msg, order):
 	return result
 
 
-print tag_experiment('chatbot.txt', 'Bot tim cho toi ATM gan Nguyen Huy Tuong', 2)
+# print type(tag_experiment('tim atm gan day', 2))
