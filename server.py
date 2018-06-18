@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
 
-import chabtot
+import chatbot
 # from flask.ext.jsonpify import jsonify
 
 app = Flask(__name__)
@@ -25,5 +25,5 @@ def message_categorize():
 
 
 if __name__ == '__main__':
-     app.run()
+    app.run()
 
