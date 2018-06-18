@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
 
-from Documents.GitHub.bankbotapi.chatbot import tag_experiment
+import tag_experiment
 # from flask.ext.jsonpify import jsonify
 
 app = Flask(__name__)
