@@ -507,4 +507,9 @@ def tag_experiment(msg, order):
 	return result
 
 
-# print type(tag_experiment('tim atm gan day', 2))
+# print tag_experiment('tim atm gan day', 2)
+import pip
+installed_packages = pip.get_installed_distributions()
+installed_packages_list = sorted(["%s==%s" % (i.key, i.version)
+     for i in installed_packages])
+print(installed_packages_list)
