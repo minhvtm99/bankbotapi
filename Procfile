@@ -1,1 +1,1 @@
-web: gunicorn server:bankbotapi
+web: gunicorn server:app
