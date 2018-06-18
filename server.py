@@ -17,12 +17,12 @@ def message_categorize():
     # }
 
     # Xu ly parse o day
-    # incoming_msg = request.json['message']
-    # tagged_msg = chatbot.tag_experiment(incoming_msg, 2)
+    incoming_msg = request.json['message']
+    tagged_msg = chatbot.tag_experiment(incoming_msg, 2)
 
     # Tra ve ket qua dang json
-    # return jsonify(categorized_msg = tagged_msg)
-    return jsonify(request.json)
+    return jsonify(categorized_msg = tagged_msg)
+    # return jsonify(request.json)
 
 if __name__ == '__main__':
     app.run()
