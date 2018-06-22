@@ -491,7 +491,7 @@ def tag_experiment(msg, order):
 	"""
 	Train the model on filename and test on msg
 	"""
-	training_data = read_pos_file('chatbot.txt')
+	training_data = read_pos_file('chatbotviet.txt')
 	words_tagged = training_data[0]
 	words = training_data[1]
 	tags = training_data[2]
