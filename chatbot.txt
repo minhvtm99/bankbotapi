@@ -18,7 +18,7 @@ day / adj
 . / .
 Tim / V
 ATM / ATM
-o / place_signal
+tai / place_signal
 khu / place_signal
 vuc / place_signal
 Nguyen / Name
@@ -54,7 +54,7 @@ tri / loc
 may / N
 rut / ATM
 tien/ ATM
-gan / place_signal
+o / place_signal
 khu / place_signal
 vuc / place_signal
 nguyen / Name
@@ -85,7 +85,7 @@ tim / V
 may / N
 rut / ATM
 tien / ATM
-gan / place_signal
+tai / place_signal
 Hang / Name 
 Bai / Name
 Ha / Name
