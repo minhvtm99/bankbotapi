@@ -57,8 +57,8 @@ tien/ ATM
 gan / place_signal
 khu / place_signal
 vuc / place_signal
-Nguyen / Name
-Chi / Name
+nguyen / Name
+chi / Name
 Thanh / Name
 voi / pls
 . / .
