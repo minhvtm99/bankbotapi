@@ -7,7 +7,9 @@ nhat / adj
 . / .
 Toi / PPN
 muon / V
-tim / V
+xin / V
+vi / place_signal
+tri / place_signal
 may / N
 rut / ATM
 tien / ATM
@@ -16,7 +18,9 @@ day / adj
 . / .
 Tim / V
 ATM / ATM
-gan / place_signal
+o / place_signal
+khu / place_signal
+vuc / place_signal
 Nguyen / Name
 Trai / Name
 voi / pls
@@ -29,6 +33,9 @@ ATM / ATM
 gan / place_signal
 Le / Name
 Duan / Name
+, / ,
+ha / Name
+noi / Name
 . / .
 May / N
 ATM / ATM
@@ -48,6 +55,8 @@ may / N
 rut / ATM
 tien/ ATM
 gan / place_signal
+khu / place_signal
+vuc / place_signal
 Nguyen / Name
 Chi / Name
 Thanh / Name
@@ -79,11 +88,18 @@ tien / ATM
 gan / place_signal
 Hang / Name 
 Bai / Name
+Ha / Name
+Noi / Name
 cho / PP
 toi / PPN
 . / .
 Xin / greeting
 chao / greeting
+toi / PPN
+den / V
+tu / PP
+Sai / Name
+Gon / Name
 . / .
 Hello / greeting
 . / .
