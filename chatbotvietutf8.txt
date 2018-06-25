@@ -17,13 +17,14 @@ o / place_signal
 gần / place_signal
 day / adj
 . / .
-Tìm / V
-ATM / ATM
-tai / place_signal
+xung / place_signal
+quanh / place_signal
 khu / place_signal
 vực / place_signal
 Nguyen / Name
 Trai / Name
+có / yes_no
+ATM / ATM
 voi / pls
 . / .
 Tim / V
