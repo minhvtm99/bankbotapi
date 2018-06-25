@@ -3,6 +3,8 @@ import math
 import random
 import numpy
 from collections import *
+import codecs
+
 
 class HMM:
 	"""
@@ -27,7 +29,9 @@ def read_pos_file(filename):
 	file_representation = []
 	unique_words = set()
 	unique_tags = set()
-	f = open(str(filename), "r")
+	# f = open(str(filename), "r")
+	f = codecs.open(str(filename), encoding='utf-8', errors='ignore')
+
 	for line in f:
 		if len(line) < 2 or len(line.split("/")) != 2:
 			continue
@@ -491,8 +495,9 @@ def tag_experiment(msg, order):
 	"""
 	Train the model on filename and test on msg
 	"""
-	training_data = read_pos_file('chatbot.txt')
+	training_data = read_pos_file('chatbotvietutf8.txt')
 	words_tagged = training_data[0]
+	# print (words_tagged)
 	words = training_data[1]
 	tags = training_data[2]
 
@@ -507,4 +512,7 @@ def tag_experiment(msg, order):
 	return result
 
 
-# print tag_experiment('tim atm gan day', 2)
+# print(tag_experiment('tim atm gan day', 2))
+
+# import sys
+# print(sys.version)
