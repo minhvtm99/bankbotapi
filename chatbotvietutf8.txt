@@ -13,6 +13,7 @@ tri / place_signal
 may / N
 rut / ATM
 tien / ATM
+o / place_signal
 gần / place_signal
 day / adj
 . / .
@@ -106,4 +107,27 @@ Hello / greeting
 Hi / greeting
 bot / PPN
 . / .
-
+ở / place_signal
+đà / Name
+nẵng / Name 
+có / yes_no
+cây / N
+rút / ATM
+tiền / ATM
+nào / ques
+của / PPN
+Vietin / N
+ko / yes_no
+? / .
+co / yes_no
+chỗ / loc
+nào / ques
+rút / ATM
+tiền / ATM
+quanh / place_signal
+lê / Name
+lạc / Name
+quận / Name
+ko / yes_no
+nhỉ / ques
+. / . 
