@@ -31,7 +31,7 @@ Tim / V
 cho / PP
 minh / PPN
 may / N
-ATM / ATM
+atm / ATM
 gan / place_signal
 Le / Name
 Duan / Name
@@ -40,7 +40,7 @@ ha / Name
 noi / Name
 . / .
 May / N
-ATM / ATM
+atm / ATM
 xung / place_signal
 quanh / place_signal
 truong / Name
