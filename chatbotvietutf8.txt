@@ -144,3 +144,31 @@ vị / place_signal
 trí / place_signal
 atm / ATM
 . / . 
+Cho / V
+minh / PPN
+chuyển / transfer
+khoan / money
+50 / amount
+trieu / unit
+. 
+Toi / PPN
+muon / V
+chuyen / transfer
+khoan / money
+tien / money
+100 / amount
+nghin / unit
+.
+Chuyen / transfer
+23 / amount
+ti / unit
+toi / PP
+tai / acc
+khoan / acc
+091058023485092 / acc_number
+tai / PP
+ngan / bank
+hang / bank
+vietin / bank
+. / . 
+
