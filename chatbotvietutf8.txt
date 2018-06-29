@@ -138,3 +138,9 @@ có / yes_no
 ATm / ATM
 nào / ques
 ? / .
+cho / V
+toi / PPN
+vị / place_signal
+trí / place_signal
+atm / ATM
+. / . 
