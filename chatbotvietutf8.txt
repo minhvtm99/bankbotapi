@@ -12,7 +12,7 @@ vi / place_signal
 tri / place_signal
 may / N
 rut / ATM
-tien / ATM
+tien / money
 o / place_signal
 gần / place_signal
 day / adj
@@ -55,7 +55,7 @@ vi / loc
 tri / loc
 may / N
 rut / ATM
-tien/ ATM
+tien/ money
 ở / place_signal
 khu / place_signal
 vuc / place_signal
