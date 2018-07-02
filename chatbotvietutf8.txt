@@ -149,7 +149,7 @@ minh / PPN
 chuyển / transfer
 khoan / money
 50 / amount
-trieu / unit
+trieu / amount
 . 
 Toi / PPN
 muon / V
@@ -157,11 +157,11 @@ chuyen / transfer
 khoan / money
 tien / money
 100 / amount
-nghin / unit
+nghin / amount
 .
 Chuyen / transfer
 23 / amount
-ti / unit
+ti / amount
 toi / PP
 tai / acc
 khoan / acc
@@ -171,4 +171,17 @@ ngan / bank
 hang / bank
 vietin / bank
 . / . 
-
+Chuyển / transfer
+tiền / money
+. / .
+Tôi / PPN
+chuyển / transfer
+71 / amount
+tỉ / amount
+tới / PP
+tài / acc
+khoản / acc
+234523485 / acc_number
+tại / PP
+Vietinbank / bank
+. / .
