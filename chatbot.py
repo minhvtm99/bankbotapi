@@ -512,7 +512,7 @@ def tag_experiment(msg, order):
 	return result
 
 
-print(tag_experiment('tim atm gan day', 2))
+#print(tag_experiment('tim atm gan day', 2))
 
 # import sys
 # print(sys.version)
