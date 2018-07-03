@@ -117,7 +117,7 @@ rút / ATM
 tiền / ATM
 nào / ques
 của / PPN
-Vietin / N
+Vietin / bank
 ko / yes_no
 ? / .
 co / yes_no
