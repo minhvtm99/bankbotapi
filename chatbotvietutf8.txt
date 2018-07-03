@@ -217,4 +217,16 @@ số / number
 tiền / money
 70.000 / amount
 . / .
-
+ngân / bank
+hàng / bank 
+Vietinbank / bank
+. / .
+25 / amount
+tỉ / amount
+. / .
+số / number
+tài / TK
+khoản / TK
+là / V
+92345882345 / acc_number
+. / . 
