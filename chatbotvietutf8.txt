@@ -256,3 +256,10 @@ ngân / bank
 hang / bank
 vietcombank / bank
 . / . 
+gửi / transfer
+4 / amount
+triệu / amount
+vào / PP
+tk / acc
+294359245 / acc_number
+. / . 
