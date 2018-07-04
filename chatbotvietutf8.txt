@@ -191,7 +191,7 @@ toi / PPN
 triệu / amount
 tới / PP
 số / number
-TK / acc
+tk / acc
 8827345 / acc_number
 ngan / bank
 hang / bank
@@ -238,8 +238,8 @@ Khoản / acc
 1284844 / acc_number
 . / . 
 so / number
-tai / TK
-khoan / TK
+tai / acc
+khoan / acc
 :  / :
 2348572345 / acc_number
 . / .
