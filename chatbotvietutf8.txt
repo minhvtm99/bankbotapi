@@ -208,6 +208,8 @@ tiền / money
 34 / amount
 trieu / amount
 . / .
+hướng / V
+dẫn / V
 Gửi / transfer
 cho / PP
 TK / acc
@@ -263,3 +265,14 @@ vào / PP
 tk / acc
 294359245 / acc_number
 . / . 
+t / PP
+muôn / V
+chuyên / transfer
+tiên / money
+thi / ques
+lam / V
+the / ques
+nao / ques
+ban / PPN
+ơi / pls
+? / .
