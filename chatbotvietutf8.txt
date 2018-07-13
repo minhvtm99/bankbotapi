@@ -119,6 +119,14 @@ ban / PPN
 . / . 
 Hello / greeting
 . / .
+hello / greeting
+. / .
+chao / greeting
+. / .
+hi / greeting
+. / .
+Hi / greeting
+. / .
 Hi / greeting
 bot / PPN
 . / .
