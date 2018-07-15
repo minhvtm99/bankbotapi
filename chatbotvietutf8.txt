@@ -326,6 +326,8 @@ tôi / PPN
 xin / request
 nghỉ / dayoff
 phép / dayoff
+hôm / date
+nay / date
 . / .
 tôi / PPN
 muốn / V
@@ -469,6 +471,9 @@ kể / from
 từ / date
 chiều / date
 ngày / date
+Hôm / date
+ay / date
+, / ,
 30/03/2019 / date
 đến / date
 hết / date
