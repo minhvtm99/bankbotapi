@@ -472,7 +472,7 @@ từ / date
 chiều / date
 ngày / date
 Hôm / date
-ay / date
+nay / date
 , / ,
 30/03/2019 / date
 đến / date
