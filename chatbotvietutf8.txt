@@ -321,6 +321,7 @@ tien / money
 cho / PP 
 toi / PPN
 . / .
+Sếp / N
 CHo / request
 tôi / PPN
 xin / request
@@ -351,6 +352,7 @@ kia / date
 Tôi / PPN
 muốn / V
 xin / request
+sếp / N
 nghỉ / dayoff
 để / reason 
 đi / V
@@ -449,6 +451,7 @@ Hướng / V
 dẫn / V
 cách / N
 xin / request
+sep / N
 vang / dayoff
 thu / date 
 2 / date
