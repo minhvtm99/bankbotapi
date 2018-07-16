@@ -335,7 +335,7 @@ muốn / V
 xin / request
 nghi / dayoff
 ngày / date
-mai /date
+mai / date
 . / .
 Hướng / V
 dẫn / V
