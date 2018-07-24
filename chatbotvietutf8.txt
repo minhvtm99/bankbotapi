@@ -166,23 +166,24 @@ vị / place_signal
 trí / place_signal
 atm / ATM
 . / . 
+23 / amount
+tỉ / amount
+. / .
 Cho / V
 minh / PPN
 chuyển / transfer
 khoan / money
+. 
 50 / amount
 trieu / amount
-. 
+EUR / amount
+. / .
 Toi / PPN
 muon / V
 chuyen / transfer
 khoan / transfer
-100 / amount
-nghin / amount
 .
 Chuyen / transfer
-23 / amount
-ti / amount
 toi / PP
 tai / acc
 khoan / acc
@@ -197,8 +198,6 @@ tiền / money
 . / .
 Tôi / PPN
 chuyển / transfer
-71 / amount
-tỉ / amount
 tới / PP
 tài / acc
 khoản / acc
@@ -207,10 +206,6 @@ tại / PP
 Vietinbank / bank
 . / .
 chuyen / transfer
-cho / PP
-toi / PPN
-20 / amount
-triệu / amount
 tới / PP
 số / number
 tk / acc
@@ -219,12 +214,17 @@ ngan / bank
 hang / bank
 vietinbank / bank
 . / .
+20 / amount
+triệu / amount
+đồng / amount
+. / .
 chuyển / transfer
 tiền / money
 toi / PP
 ngân / bank
 hang / bank
 Vietinbank / bank
+. / .
 so / number
 tiền / money 
 34 / amount
@@ -236,6 +236,7 @@ Gửi / transfer
 cho / PP
 TK / acc
 88245823745 / acc_number
+. / .
 số / number
 tiền / money
 70.000 / amount
@@ -262,8 +263,6 @@ là / V
 92345882345 / acc_number
 . / . 
 Chuyển / transfer
-23 / amount
-tỉ / amount
 vào / PP
 tài / acc
 Khoản / acc
@@ -289,6 +288,8 @@ hang / bank
 vietcombank / bank
 . / . 
 gửi / transfer
+tiền / money 
+. / .
 4 / amount
 triệu / amount
 vào / PP
@@ -310,8 +311,7 @@ Hướng / V
 dẫn / V
 tôi / PP
 chuyển / transfer
-5 / amount
-trieu / amount 
+tien / money
 với / pls
 ? / .
 chuyển / transfer
