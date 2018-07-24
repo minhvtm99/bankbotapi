@@ -244,6 +244,14 @@ ngân / bank
 hàng / bank 
 Vietin / bank
 . / .
+27 / amount
+nghin / amount
+USD / amount
+. / .
+3000000 / amount
+tram / amount
+VND / amount 
+. / .
 25 / amount
 tỉ / amount
 . / .
@@ -253,7 +261,7 @@ khoản / acc
 là / V
 92345882345 / acc_number
 . / . 
-Chuyển / V
+Chuyển / transfer
 23 / amount
 tỉ / amount
 vào / PP
