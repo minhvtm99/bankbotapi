@@ -263,6 +263,7 @@ là / V
 92345882345 / acc_number
 . / . 
 Chuyển / transfer
+khoan / money
 vào / PP
 tài / acc
 Khoản / acc
@@ -311,7 +312,7 @@ Hướng / V
 dẫn / V
 tôi / PP
 chuyển / transfer
-tien / money
+khoản / money
 với / pls
 ? / .
 chuyển / transfer
