@@ -182,6 +182,9 @@ Toi / PPN
 muon / V
 chuyen / transfer
 khoan / transfer
+cho / PP
+người / N
+than / N
 .
 Chuyen / transfer
 toi / PP
@@ -328,7 +331,8 @@ cách / N
 chuyen / transfer
 tien / money 
 cho / PP 
-toi / PPN
+nguoi / N
+thân / N
 . / .
 Sếp / N
 CHo / request
