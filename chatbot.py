@@ -405,9 +405,9 @@ def digram_viterbi(hmm, sentence):
 		Z[i] = bp[Z[i+1]][i+1]
 		Y[i] = v[Z[i+1]][i+1][0]
 		T[i] = v[Z[i+1]][i+1][1]
-	for i in range(len(X)-1, -1, -1):
-		if T[i] <  0.0001 :
-			Z[i] = 'amount'
+	# for i in range(len(X)-1, -1, -1):
+	# 	if T[i] <  0.0001 :
+	# 		Z[i] = 'amount'
 
 	#Zip X and Z
 	result = []
