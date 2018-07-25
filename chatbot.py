@@ -398,7 +398,7 @@ def digram_viterbi(hmm, sentence):
 	for l_prime in A.keys():
 		if Y[-1] == v[l_prime][len(X)-1][0]:
 			T[-1] =  v[l_prime][len(X)-1][1]
-			if T[-1] = 0.00009984025559105434:
+			if T[-1] == 0.00009984025559105434:
 				Z[-1] = 'amount'
 			break
 
@@ -407,7 +407,7 @@ def digram_viterbi(hmm, sentence):
 		Z[i] = bp[Z[i+1]][i+1]
 		Y[i] = v[Z[i+1]][i+1][0]
 		T[i] = v[Z[i+1]][i+1][1]
-		if T[i] = 0.00009984025559105434 :
+		if T[i] == 0.00009984025559105434 :
 			Z[i] = 'amount'
 	
 	#Zip X and Z
