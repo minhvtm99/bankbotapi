@@ -383,16 +383,22 @@ def bigram_viterbi(hmm, sentence):
 
 	#Initialize tag sequence Z
 	Z = [None] * len(X)
+
+	Y = [None] * len(X)
+
 	#Compute Z[L-1]
 	Z[-1] = max(A, key=lambda l_prime: v[l_prime][len(X)-1])
+
+	Y[-1] = max([v[l_prime][len(X)-1] for l_prime in A.keys()])
 	#Compute the rest of Z
 	for i in range(len(X)-2, -1, -1):
 		Z[i] = bp[Z[i+1]][i+1]
+		Y[i] = v[Z[i+1]][i+1]
 	
 	#Zip X and Z
 	result = []
 	for i in range(len(X)):
-		result.append((X[i],Z[i]))
+		result.append((X[i],Z[i],Y[i]))
 
 	return result
 
