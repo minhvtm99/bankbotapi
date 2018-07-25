@@ -353,6 +353,67 @@ def build_hmm(training_data, unique_tags, unique_words, order, use_smoothing):
 	return hidden_model
 
 
+def digram_viterbi(hmm, sentence):
+	"""
+	Given a hidden markov model and a sentence, return an optimal tag sequence
+
+	Inputs:
+	- hmm: an instance of the class HMM.
+	- sentence: a list of strings.
+
+	Output:
+	- A list of tuple (word, tag)
+	"""
+	#get the properties of the hmm
+	pi = hmm.initial_distribution
+	E = hmm.emission_matrix
+	A = hmm.transition_matrix
+	X = sentence
+	#Initialize matrix v and matrix bp, both as 2D dictionary
+	v = defaultdict(lambda : defaultdict(int)) 
+	bp = defaultdict(lambda: defaultdict(str))
+
+	#Compute v[l,0] for all states l
+	for l in A.keys():
+		v[l][0] = [numpy.log(pi[l]) + numpy.log(E[l][X[0]]), E[l][X[0]] ]
+
+	#Compute v and bp
+	for i in range(1, len(X)):
+		for l in A.keys():
+			v[l][i] = [numpy.log(E[l][X[i]]) + max([(v[l_prime][i-1][0] + numpy.log(A[l_prime][l])) for l_prime in A.keys()]), E[l][X[i]]]
+			bp[l][i] =  max(A, key=lambda l_prime: v[l_prime][i-1][0] + numpy.log(A[l_prime][l]))
+
+	#Initialize tag sequence Z
+	Z = [None] * len(X)
+
+	Y = [None] * len(X)
+
+	T = [None] * len(X)
+
+	#Compute Z[L-1]
+	Z[-1] = max(A, key=lambda l_prime: v[l_prime][len(X)-1][0])
+
+	Y[-1] = max([v[l_prime][len(X)-1][0] for l_prime in A.keys()])
+
+	for l_prime in A.keys():
+		if Y[-1] == v[l_prime][len(X)-1][0]:
+			T[-1] =  v[l_prime][len(X)-1][1]
+			break
+
+	#Compute the rest of Z
+	for i in range(len(X)-2, -1, -1):
+		Z[i] = bp[Z[i+1]][i+1]
+		Y[i] = v[Z[i+1]][i+1][0]
+		T[i] = v[Z[i+1]][i+1][1]
+	
+	#Zip X and Z
+	result = []
+	for i in range(len(X)):
+		result.append((X[i],Z[i],Y[i],T[i]))
+
+	return result
+
+
 def bigram_viterbi(hmm, sentence):
 	"""
 	Given a hidden markov model and a sentence, return an optimal tag sequence
@@ -372,9 +433,11 @@ def bigram_viterbi(hmm, sentence):
 	#Initialize matrix v and matrix bp, both as 2D dictionary
 	v = defaultdict(lambda : defaultdict(int)) 
 	bp = defaultdict(lambda: defaultdict(str))
+
 	#Compute v[l,0] for all states l
 	for l in A.keys():
 		v[l][0] = numpy.log(pi[l]) + numpy.log(E[l][X[0]])
+
 	#Compute v and bp
 	for i in range(1, len(X)):
 		for l in A.keys():
@@ -384,21 +447,17 @@ def bigram_viterbi(hmm, sentence):
 	#Initialize tag sequence Z
 	Z = [None] * len(X)
 
-	Y = [None] * len(X)
-
 	#Compute Z[L-1]
 	Z[-1] = max(A, key=lambda l_prime: v[l_prime][len(X)-1])
 
-	Y[-1] = max([v[l_prime][len(X)-1] for l_prime in A.keys()])
 	#Compute the rest of Z
 	for i in range(len(X)-2, -1, -1):
 		Z[i] = bp[Z[i+1]][i+1]
-		Y[i] = v[Z[i+1]][i+1]
 	
 	#Zip X and Z
 	result = []
 	for i in range(len(X)):
-		result.append((X[i],Z[i],Y[i]))
+		result.append((X[i],Z[i]))
 
 	return result
 
@@ -511,7 +570,7 @@ def tag_experiment(msg, order):
 	update_hmm(hmm, msg.split(), 0.0001)
 
 	if order == 2:
-		result = bigram_viterbi(hmm, msg.split())
+		result = digram_viterbi(hmm, msg.split())
 	else:
 		result = trigram_viterbi(hmm, msg.split())
 
