@@ -398,6 +398,7 @@ chăm / V
 soc / V
 gia / N 
 đình / N
+rieng / adj
 . / .
 do / reason
 tôi / PPN
@@ -418,6 +419,7 @@ vi / reason
 toi / PPN
 có / V
 viec / N
+riêng / adj
 đột / adj
 xuất / adj
 . / . 
