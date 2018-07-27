@@ -462,6 +462,10 @@ vi / reason
 đi / V
 nghỉ / V
 . / .
+nghi / dayoff
+viec / N
+riêng / adj
+. / .
 Hướng / V
 dẫn / V
 cách / N
