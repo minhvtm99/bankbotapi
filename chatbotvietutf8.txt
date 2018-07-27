@@ -533,4 +533,23 @@ tôi / PPN'
 phép / V
 nghỉ / dayoff
 . / .
-
+còn / count
+mấy / count
+ngày / date
+nghỉ / dayoff
+phep / dayoff
+nữa / adj
+nhỉ / pls
+. / .
+send / V
+tôi / PPN
+thông / N
+tin / N
+xem / PP
+e / PPN
+còn / count
+may / count
+ngày / date
+nghỉ / dayoff
+nưã / adj
+. / .
